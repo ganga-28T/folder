@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+<!--fontawesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <!--navigation-->
+  <div class="container_gird">
+  <nav class="navbar">
+<div class="navbar_logo">
+  <img src="images/logo.png" alt="logo" height="100" width="100">
+</div>
+<div class="navbar_links">
+  <ul class="linklist">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT </a></li>
+    <li><a href="#">REGISTERATION </a></li>
+    <li><a href="#">EMERGENCY </a></li>
+    <li><a href="#">CONTACT</a></li>
+    <li><a href="#">AMBULANCE</a></li>
+  </ul>
+</div>
+</nav>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="images/a.png" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="images/bb.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="images/c.png" style="width:100%">
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+
+<div class="text">  
+OUR <br>EXPERTISE <br>IN <br>YOUR<br> SERVICE</div>
+<div class="button1">
+<button class="button">Emergency</button></div>
+
+<div class="button2">
+  <button class="button">Login</button>
+</div>
+<div class="button3">
+  <button class="button">appointment</button>
+</div>
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+</div>   
+  </div>
+</div>
+  <div class="footer">
+  <div class="footer_content">
+    <div class="media">
+      <h1>Social Media</h1>
+      <!--social media-->
+      <div class="media_icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-pinterest"></i>
+    </div>
+    </div>
+    <!--laction details-->
+    <div class="location">
+      <h1>Location Details</h1>
+      <i class="fa-sharp fa-solid fa-location-dot"></i>
+      <h2>Bhalwari,Rupandehi</h2>
+    </div>
+    <!--contact details-->
+    <div class="contact">
+      <h1>Contact Details</h1>
+      <br>
+      <i class="fa-solid fa-phone"> <h2>+977-981-0136491</h2></i>
+     <br><br>
+      <i class="fa-solid fa-phone"> <h2>+977-981-0133467</h2></i>
+      <br><br>
+      <i class="fa-regular fa-envelope">&nbsp;	<h3>info@nepalmedicine.com</h3></i>
+    </div>
+    <div class="Useful_links">
+     <h1>Useful Links</h1><br>
+      <h2>News & Articles</h2><br>
+      <h2>Blog</h2><br>
+        <h2>Photo Gallery</h2><br>
+        <h2>Insurance policy</h2><br>
+        <h2>FAQ</h2>
+      </div>
+      </div>
+<hr>
+<div class="copyright">
+<h4>Copyright @ 2017 Nepal Medicine, a unit of Norvic College and Hospital. All right reserved.</h4>
+</div>
+</div>
+  </div>
+</body>
+</html>
